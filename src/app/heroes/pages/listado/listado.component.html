@@ -1,0 +1,23 @@
+<h1>Listado de heroes 456</h1>
+<!-- <hr /> -->
+
+<div 
+    fxLayout="row wrap"
+    fxLayout.xs="column"
+    fxLayoutAlign="center"
+    fxLayoutGap = "20px"
+>
+
+  <div fxFlex.gt-sm="30" 
+        *ngFor="let heroe of heroes"
+        fxFlex.lg="18"
+        >
+
+   <app-heroe-targeta-component
+    [heroe]="heroe"
+   >
+   </app-heroe-targeta-component>
+
+  </div>
+</div>
+<h2>tierra</h2>
